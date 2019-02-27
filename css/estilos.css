@@ -1,0 +1,473 @@
+/*-----------------------------
+PATRON DE COLORES
+------------------------------*/
+/*-----------------------------
+------------------------------*/
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 13px; }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background: #2D1E56; }
+
+.bienvenidos {
+  background: url("../images/Home_page/mobil1.png") no-repeat center top;
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.fixed-top {
+  position: absolute; }
+
+.encabezado {
+  padding: .5rem 0;
+  background-color: transparent !important; }
+
+/*-----------------------------
+LOGO PRINCIPAL, FORMATOS ADAPTABLES
+------------------------------*/
+.encabezado .logo img {
+  width: 80px;
+  height: auto; }
+
+.encabezado .logo2 img {
+  width: 250px;
+  height: auto; }
+
+/*-----------------------------
+BOTONES MENU Y BUSCAR
+------------------------------*/
+.boton-buscar,
+.boton-menu {
+  color: white;
+  border: 0;
+  font-size: 1.5rem; }
+
+.boton-buscar:hover,
+.boton-menu:hover {
+  color: #aeacac;
+  border: 0;
+  font-size: 1.5rem; }
+
+.boton-buscar:active,
+.boton-menu:active {
+  color: red; }
+
+.boton-buscar:focus,
+.boton-menu:focus {
+  color: #a9008d;
+  border: 0;
+  font-size: 1.5rem; }
+
+.boton-buscar {
+  margin-left: auto; }
+
+/*-----------------------------
+BLOQUE BUSCAR
+------------------------------*/
+#bloque-buscar {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin-top: 0.9rem; }
+
+.contenedor-bloque-buscar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+#bloque-buscar input[type="text"] {
+  border: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 5px 0 0 5px;
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 auto;
+          flex: 3 1 auto; }
+
+#bloque-buscar input[type="submit"] {
+  border: 0;
+  background-image: linear-gradient(120deg, #67D690 0%, #00A99D 100%);
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto; }
+
+#bloque-buscar input[type="submit"]:hover {
+  background-image: linear-gradient(120deg, #649a78 0%, #049187 100%);
+  cursor: pointer; }
+
+#bloque-buscar input[type="submit"]:focus {
+  outline: 0; }
+
+/*-----------------------------
+MENU PRINCIPAL
+------------------------------*/
+#menu-principal {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  background-image: -webkit-gradient(linear, right top, left top, from(#642b73), to(#642b73));
+  background-image: linear-gradient(to left, #642b73 0%, #642b73 100%);
+  margin-top: 1.3rem;
+  border-radius: 5px;
+  border-bottom: 4px solid #ffb900; }
+
+#menu-principal ul {
+  padding: 0;
+  text-align: center;
+  margin-bottom: 0; }
+
+#menu-principal li {
+  list-style: none;
+  text-decoration: none;
+  padding: 0.6rem; }
+
+#menu-principal li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  background: darkmagenta; }
+
+.btn.focus, .btn:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(156, 58, 136, 0.23);
+          box-shadow: 0 0 0 0.2rem rgba(156, 58, 136, 0.23); }
+
+#menu-principal ul li .btn:active {
+  background: #6d0976; }
+
+#menu-principal ul li .dropdown-menu a {
+  background: transparent;
+  margin-top: 0.7rem;
+  text-align: center;
+  color: #f8f9fa; }
+
+#menu-principal .dropdown-menu.show {
+  display: contents; }
+
+#menu-principal ul li .dropdown-menu a:hover {
+  color: darkmagenta; }
+
+/*-----------------------------
+TEXTO DEL ENCABEZADO
+------------------------------*/
+.texto-encabezado {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.texto-encabezado .display-4 {
+  margin-top: 5rem; }
+
+.texto-encabezado p {
+  margin: 1rem 0 2rem 0; }
+
+/*-----------------------------
+BOTON VER MAS...
+------------------------------*/
+.btn-success {
+  background-image: linear-gradient(120deg, #67D690 0%, #00A99D 100%); }
+
+.btn-success:hover {
+  background-image: linear-gradient(120deg, #649a78 0%, #049187 100%);
+  border-color: #71de8a; }
+
+.btn-success:not(:disabled):not(.disabled).active, .btn-success:not(:disabled):not(.disabled):active, .show > .btn-success.dropdown-toggle {
+  color: #fff;
+  background-color: #00A99D;
+  border-color: #1c7430; }
+
+/*-----------------------------
+FLECHA BAJAR ANIMADA
+------------------------------*/
+.flecha-bajar a {
+  display: inline-block;
+  font-size: 3rem;
+  color: #fff;
+  -webkit-animation: flecha-animada 2s ease-in-out infinite;
+          animation: flecha-animada 2s ease-in-out infinite; }
+
+@-webkit-keyframes flecha-animada {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px); }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes flecha-animada {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px); }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+/*-----------------------------
+SECCION DE PORQUE ELEGIRNOS
+------------------------------*/
+.eligenos h2 {
+  color: white;
+  padding-top: 5rem;
+  text-align: center; }
+
+.eligenos p {
+  color: white;
+  margin-top: 2rem;
+  text-align: justify; }
+
+/*-----------------------------
+SECCION SERVICIOS
+------------------------------*/
+.servicios {
+  background: url("../images/Home_page/segundaparte-mobil4.png") no-repeat center top; }
+
+.servicios {
+  color: white;
+  padding: 2rem; }
+
+.servicios h2 {
+  color: white;
+  margin-top: 4rem;
+  font-weight: bold; }
+
+.servicios h5 {
+  color: white;
+  margin: 2rem 0 2rem 0;
+  font-weight: bold; }
+
+.servicios p {
+  text-align: justify;
+  margin-top: 2rem;
+  padding: 0 2rem; }
+
+.servicios img {
+  width: 200px; }
+
+/*-----------------------------
+FOOTER
+------------------------------*/
+footer {
+  background-color: #353535;
+  background-size: cover;
+  padding: 2rem 0; }
+
+footer p {
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  padding: 0; }
+
+footer li {
+  text-decoration: none;
+  margin-right: 10px; }
+
+footer li a {
+  color: white;
+  font-size: 2rem; }
+
+/*-----------------------------
+MEDIA QUERY PARA 768px
+------------------------------*/
+@media (min-width: 768px) {
+  html {
+    font-size: 16px; }
+
+  body {
+    background: #2D1E56; }
+
+  .bienvenidos {
+    background: url("../images/Home_page/otraopcion-min.png") no-repeat center top;
+    background-size: cover;
+    height: 100vh;
+    width: auto; }
+
+  .boton-buscar {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-left: 1rem; }
+
+  #menu-principal {
+    display: block;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    margin-left: auto;
+    margin-top: 0;
+    background: transparent;
+    border-bottom: 0px; }
+
+  #menu-principal ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0; }
+
+  #menu-principal ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-top: 0px;
+    padding: 0.3rem; }
+
+  #menu-principal ul li a {
+    text-transform: capitalize;
+    background: transparent; }
+
+  #menu-principal ul li a:hover {
+    background: darkmagenta; }
+
+  .btn.focus, .btn:focus {
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(156, 58, 136, 0.23);
+            box-shadow: 0 0 0 0.2rem rgba(156, 58, 136, 0.23); }
+
+  #menu-principal ul li .btn:active {
+    background: #6d0976; }
+
+  #menu-principal ul li .dropdown-menu a {
+    background: transparent;
+    margin-top: 0.7rem;
+    text-align: left;
+    color: black; }
+
+  #menu-principal .dropdown-menu.show {
+    display: block; }
+
+  .btn-outline-light {
+    border-color: transparent; }
+
+  .btn-outline-light:hover {
+    border-color: transparent;
+    background-color: #4b28c4; }
+
+  .encabezado .container {
+    position: relative; }
+
+  #bloque-buscar {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    position: absolute;
+    width: 20rem;
+    right: .9rem;
+    top: 4.2rem;
+    margin-top: 0.2rem; }
+
+  .texto-encabezado {
+    color: white; }
+
+  .edificio {
+    margin-top: 7rem; }
+
+  .edificio img {
+    width: 100%;
+    height: auto; }
+
+  /*-----------------------------
+  PORQUE ELEGIRNOS
+  ------------------------------*/
+  .eligenos {
+    background: url("../images/Home_page/elegirnos-min.png") no-repeat center right;
+    background-size: cover;
+    height: 100vh; }
+
+  .eligenos h2 {
+    text-align: left;
+    padding-top: 1rem; }
+
+  .eligenos p {
+    margin-top: 1rem; }
+
+  .eligenos .col-md-4 {
+    background: rgba(139, 0, 139, 0.5);
+    border-radius: 5px; }
+
+  /*-----------------------------
+  SERVICIOS
+  ------------------------------*/
+  .servicios {
+    background: url("../images/Home_page/fondo-servicios.png") no-repeat center top;
+    background-size: cover; } }
+/*-----------------------------
+MEDIA QUERY PARA 992px
+------------------------------*/
+@media (min-width: 992px) {
+  .edificio {
+    margin-top: 4rem; }
+
+  .eligenos h2 {
+    padding-top: 5rem; }
+
+  .eligenos p {
+    margin-top: 2rem; }
+
+  .eligenos .col-md-4 {
+    background: transparent; } }
+/*-----------------------------
+MEDIA QUERY PARA 1200px
+------------------------------*/
+@media (min-width: 1200px) {
+  .bienvenidos {
+    background: url("../images/Home_page/otraopcion-grande-min.png") no-repeat center top;
+    background-size: cover; }
+
+  .edificio img {
+    width: 100%;
+    height: auto; }
+
+  .eligenos {
+    background: url("../images/Home_page/elegirnos-grande-min.png") no-repeat center right;
+    background-size: cover;
+    height: 100vh; }
+
+  .eligenos h2 {
+    padding-top: 9.3rem; }
+
+  .eligenos p {
+    margin-top: 2rem; } }
+
+/*# sourceMappingURL=estilos.css.map */
