@@ -117,11 +117,11 @@ MENU PRINCIPAL
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
-  background-image: -webkit-gradient(linear, right top, left top, from(#27235f), to(#5c146f));
-  background-image: linear-gradient(to left, #27235f 0%, #5c146f 100%);
+  background-image: -webkit-gradient(linear, right top, left top, from(#3c1b54), to(#5c146f));
+  background-image: linear-gradient(to left, #3c1b54 0%, #5c146f 100%);
   margin-top: 1.3rem;
   border-radius: 5px;
-  border-bottom: 4px solid #ffb900; }
+  border-bottom: 4px solid #7f077d; }
 
 #menu-principal ul {
   padding: 0;
@@ -272,7 +272,7 @@ SECCION SERVICIOS
 FOOTER
 ------------------------------*/
 footer {
-  background-color: #353535;
+  background-color: #17113C;
   background-size: cover;
   padding: 2rem 0; }
 
@@ -436,6 +436,9 @@ MEDIA QUERY PARA 768px
 MEDIA QUERY PARA 992px
 ------------------------------*/
 @media (min-width: 992px) {
+  .texto-encabezado .display-4 {
+    margin-top: 8rem; }
+
   .edificio {
     margin-top: 4rem; }
 
@@ -454,6 +457,9 @@ MEDIA QUERY PARA 1200px
   .bienvenidos {
     background: url("../images/Home_page/otraopcion-grande-min.png") no-repeat center top;
     background-size: cover; }
+
+  .texto-encabezado .display-4 {
+    margin-top: 9.6rem; }
 
   .edificio img {
     width: 100%;
