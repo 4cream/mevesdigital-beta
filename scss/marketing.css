@@ -104,11 +104,11 @@ MENU PRINCIPAL
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
-  background-image: -webkit-gradient(linear, right top, left top, from(#3c1b54), to(#5c146f));
-  background-image: linear-gradient(to left, #3c1b54 0%, #5c146f 100%);
+  background-image: -webkit-gradient(linear, right top, left top, from(#642b73), to(#642b73));
+  background-image: linear-gradient(to left, #642b73 0%, #642b73 100%);
   margin-top: 1.3rem;
   border-radius: 5px;
-  border-bottom: 4px solid #7f077d; }
+  border-bottom: 4px solid #ffb900; }
 
 #menu-principal ul {
   padding: 0;
@@ -150,64 +150,34 @@ MENU PRINCIPAL
 /*-----------------------------
 SECCION SERVICIOS
 ------------------------------*/
-.contacto {
+.servicios {
   background: url("../images/Home_page/segundaparte-mobil4.png") no-repeat center top;
   background-size: cover; }
 
-.contacto {
+.servicios {
   color: white;
   padding: 2rem; }
 
-.contacto h5, p {
-  color: white;
-  margin: 2rem 0; }
+.servicios h5, p {
+  color: white; }
 
-.contacto img {
-  width: 200px; }
-
-.contacto h2 {
+.servicios h2 {
   margin-top: 6rem;
+  margin-bottom: 2rem;
   font-weight: bold; }
 
-.formulario {
-  margin: 2rem 0; }
+.img-service {
+  margin: 2rem auto 5rem auto; }
 
-.redes-sociales {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 2rem 0; }
+.img-service img {
+  width: 18rem; }
 
-.redes-sociales h6 {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 100%;
-          flex: 1 0 100%;
-  text-align: center; }
+.img-service p {
+  color: black; }
 
-.redes-sociales a img {
-  width: 4rem;
-  height: auto;
-  margin: 1rem; }
-
-/*-----------------------------
-BOTON ENVIAR ...
-------------------------------*/
-.btn-success {
-  background-image: linear-gradient(120deg, #67D690 0%, #00A99D 100%); }
-
-.btn-success:hover {
-  background-image: linear-gradient(120deg, #649a78 0%, #049187 100%);
-  border-color: #71de8a; }
-
-.btn-success:not(:disabled):not(.disabled).active, .btn-success:not(:disabled):not(.disabled):active, .show > .btn-success.dropdown-toggle {
-  color: #fff;
-  background-color: #00A99D;
-  border-color: #1c7430; }
+.img-service h5 {
+  margin: 2rem 0 1rem 0;
+  font-weight: bold; }
 
 /*-----------------------------
 FOOTER
@@ -343,9 +313,12 @@ MEDIA QUERY PARA 768px
     background-size: cover;
     height: 100vh; }
 
-  .contacto {
+  .servicios {
     background: url("../images/Home_page/fondo-servicios.png") no-repeat center top;
-    background-size: cover; } }
+    background-size: cover; }
+
+  .img-service img {
+    width: 11rem; } }
 /*-----------------------------
 MEDIA QUERY PARA 1200px
 ------------------------------*/
@@ -361,6 +334,9 @@ MEDIA QUERY PARA 1200px
   .eligenos {
     background: url("../images/Home_page/elegirnos-grande.png") no-repeat center right;
     background-size: cover;
-    height: 100vh; } }
+    height: 100vh; }
 
-/*# sourceMappingURL=contacto.css.map */
+  .img-service img {
+    width: 15rem; } }
+
+/*# sourceMappingURL=marketing.css.map */

@@ -9,8 +9,8 @@ html {
   font-size: 13px; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  background: #2D1E56; }
+  font-family: 'Raleway', sans-serif;
+  background: white; }
 
 .fixed-top {
   position: absolute; }
@@ -19,10 +19,20 @@ body {
   padding: .5rem 0;
   background-color: transparent !important; }
 
+/*-----------------------------
+LOGO PRINCIPAL, FORMATOS ADAPTABLES
+------------------------------*/
 .encabezado .logo img {
-  width: 100px;
+  width: 80px;
   height: auto; }
 
+.encabezado .logo2 img {
+  width: 250px;
+  height: auto; }
+
+/*-----------------------------
+BOTONES MENU Y BUSCAR
+------------------------------*/
 .boton-buscar,
 .boton-menu {
   color: white;
@@ -125,6 +135,18 @@ MENU PRINCIPAL
 #menu-principal ul li .btn:active {
   background: #6d0976; }
 
+#menu-principal ul li .dropdown-menu a {
+  background: transparent;
+  margin-top: 0.7rem;
+  text-align: center;
+  color: #f8f9fa; }
+
+#menu-principal .dropdown-menu.show {
+  display: contents; }
+
+#menu-principal ul li .dropdown-menu a:hover {
+  color: darkmagenta; }
+
 /*-----------------------------
 SECCION SERVICIOS
 ------------------------------*/
@@ -137,14 +159,25 @@ SECCION SERVICIOS
   padding: 2rem; }
 
 .servicios h5, p {
-  color: white;
-  margin: 2rem 0; }
-
-.servicios img {
-  width: 200px; }
+  color: white; }
 
 .servicios h2 {
-  margin-top: 6rem; }
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  font-weight: bold; }
+
+.img-service {
+  margin: 2rem auto 5rem auto; }
+
+.img-service img {
+  width: 18rem; }
+
+.img-service p {
+  color: black; }
+
+.img-service h5 {
+  margin: 2rem 0 1rem 0;
+  font-weight: bold; }
 
 /*-----------------------------
 FOOTER
@@ -155,6 +188,7 @@ footer {
   padding: 2rem 0; }
 
 footer p {
+  color: white;
   margin-top: 0;
   margin-bottom: 0; }
 
@@ -182,9 +216,6 @@ MEDIA QUERY PARA 768px
 @media (min-width: 768px) {
   html {
     font-size: 16px; }
-
-  body {
-    background: #2D1E56; }
 
   .boton-buscar {
     -webkit-box-ordinal-group: 3;
@@ -236,6 +267,15 @@ MEDIA QUERY PARA 768px
   #menu-principal ul li .btn:active {
     background: #6d0976; }
 
+  #menu-principal ul li .dropdown-menu a {
+    background: transparent;
+    margin-top: 0.7rem;
+    text-align: left;
+    color: black; }
+
+  #menu-principal .dropdown-menu.show {
+    display: block; }
+
   .encabezado .container {
     position: relative; }
 
@@ -275,7 +315,10 @@ MEDIA QUERY PARA 768px
 
   .servicios {
     background: url("../images/Home_page/fondo-servicios.png") no-repeat center top;
-    background-size: cover; } }
+    background-size: cover; }
+
+  .img-service img {
+    width: 11rem; } }
 /*-----------------------------
 MEDIA QUERY PARA 1200px
 ------------------------------*/
@@ -291,6 +334,9 @@ MEDIA QUERY PARA 1200px
   .eligenos {
     background: url("../images/Home_page/elegirnos-grande.png") no-repeat center right;
     background-size: cover;
-    height: 100vh; } }
+    height: 100vh; }
+
+  .img-service img {
+    width: 15rem; } }
 
 /*# sourceMappingURL=servicios.css.map */
