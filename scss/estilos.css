@@ -9,7 +9,7 @@ html {
   font-size: 13px; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   background: #2D1E56; }
 
 .bienvenidos {
@@ -32,10 +32,20 @@ body {
   padding: .5rem 0;
   background-color: transparent !important; }
 
+/*-----------------------------
+LOGO PRINCIPAL, FORMATOS ADAPTABLES
+------------------------------*/
 .encabezado .logo img {
-  width: 100px;
+  width: 80px;
   height: auto; }
 
+.encabezado .logo2 img {
+  width: 250px;
+  height: auto; }
+
+/*-----------------------------
+BOTONES MENU Y BUSCAR
+------------------------------*/
 .boton-buscar,
 .boton-menu {
   color: white;
@@ -107,8 +117,8 @@ MENU PRINCIPAL
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
-  background-image: -webkit-gradient(linear, right top, left top, from(#642b73), to(#642b73));
-  background-image: linear-gradient(to left, #642b73 0%, #642b73 100%);
+  background-image: -webkit-gradient(linear, right top, left top, from(#27235f), to(#5c146f));
+  background-image: linear-gradient(to left, #27235f 0%, #5c146f 100%);
   margin-top: 1.3rem;
   border-radius: 5px;
   border-bottom: 4px solid #ffb900; }
@@ -138,6 +148,18 @@ MENU PRINCIPAL
 #menu-principal ul li .btn:active {
   background: #6d0976; }
 
+#menu-principal ul li .dropdown-menu a {
+  background: transparent;
+  margin-top: 0.7rem;
+  text-align: center;
+  color: #f8f9fa; }
+
+#menu-principal .dropdown-menu.show {
+  display: contents; }
+
+#menu-principal ul li .dropdown-menu a:hover {
+  color: darkmagenta; }
+
 /*-----------------------------
 TEXTO DEL ENCABEZADO
 ------------------------------*/
@@ -148,14 +170,16 @@ TEXTO DEL ENCABEZADO
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: white; }
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .texto-encabezado .display-4 {
-  margin-top: 9rem; }
+  margin-top: 5rem; }
 
-.texto-encabezado p,
-.texto-encabezado a {
-  margin-top: 2rem; }
+.texto-encabezado p {
+  margin: 1rem 0 2rem 0; }
 
 /*-----------------------------
 BOTON VER MAS...
@@ -208,10 +232,12 @@ SECCION DE PORQUE ELEGIRNOS
 ------------------------------*/
 .eligenos h2 {
   color: white;
-  padding-top: 2rem;
+  padding-top: 5rem;
   text-align: center; }
 
 .eligenos p {
+  color: white;
+  margin-top: 2rem;
   text-align: justify; }
 
 /*-----------------------------
@@ -224,12 +250,20 @@ SECCION SERVICIOS
   color: white;
   padding: 2rem; }
 
-.servicios h5, p {
+.servicios h2 {
   color: white;
-  margin: 2rem 0; }
+  margin-top: 4rem;
+  font-weight: bold; }
+
+.servicios h5 {
+  color: white;
+  margin: 2rem 0 2rem 0;
+  font-weight: bold; }
 
 .servicios p {
-  text-align: justify; }
+  text-align: justify;
+  margin-top: 2rem;
+  padding: 0 2rem; }
 
 .servicios img {
   width: 200px; }
@@ -243,6 +277,7 @@ footer {
   padding: 2rem 0; }
 
 footer p {
+  color: white;
   margin-top: 0;
   margin-bottom: 0; }
 
@@ -275,7 +310,7 @@ MEDIA QUERY PARA 768px
     background: #2D1E56; }
 
   .bienvenidos {
-    background: url("../images/Home_page/otraopcion.png") no-repeat center top;
+    background: url("../images/Home_page/otraopcion-min.png") no-repeat center top;
     background-size: cover;
     height: 100vh;
     width: auto; }
@@ -330,6 +365,15 @@ MEDIA QUERY PARA 768px
   #menu-principal ul li .btn:active {
     background: #6d0976; }
 
+  #menu-principal ul li .dropdown-menu a {
+    background: transparent;
+    margin-top: 0.7rem;
+    text-align: left;
+    color: black; }
+
+  #menu-principal .dropdown-menu.show {
+    display: block; }
+
   .btn-outline-light {
     border-color: transparent; }
 
@@ -356,38 +400,59 @@ MEDIA QUERY PARA 768px
   .texto-encabezado {
     color: white; }
 
-  .texto-encabezado .display-4 {
-    margin-top: 12rem; }
-
-  .texto-encabezado p,
-  .texto-encabezado a {
-    margin-top: 2rem; }
-
   .edificio {
-    margin-top: 10rem; }
+    margin-top: 7rem; }
 
   .edificio img {
     width: 100%;
     height: auto; }
 
+  /*-----------------------------
+  PORQUE ELEGIRNOS
+  ------------------------------*/
   .eligenos {
-    background: url("../images/Home_page/elegirnos.png") no-repeat center right;
+    background: url("../images/Home_page/elegirnos-min.png") no-repeat center right;
     background-size: cover;
     height: 100vh; }
 
   .eligenos h2 {
-    text-align: left; }
+    text-align: left;
+    padding-top: 1rem; }
 
+  .eligenos p {
+    margin-top: 1rem; }
+
+  .eligenos .col-md-4 {
+    background: rgba(139, 0, 139, 0.5);
+    border-radius: 5px; }
+
+  /*-----------------------------
+  SERVICIOS
+  ------------------------------*/
   .servicios {
     background: url("../images/Home_page/fondo-servicios.png") no-repeat center top;
-    background-size: cover;
-    height: 100vh; } }
+    background-size: cover; } }
+/*-----------------------------
+MEDIA QUERY PARA 992px
+------------------------------*/
+@media (min-width: 992px) {
+  .edificio {
+    margin-top: 4rem; }
+
+  .eligenos h2 {
+    padding-top: 5rem; }
+
+  .eligenos p {
+    margin-top: 2rem; }
+
+  .eligenos .col-md-4 {
+    background: transparent; } }
 /*-----------------------------
 MEDIA QUERY PARA 1200px
 ------------------------------*/
 @media (min-width: 1200px) {
   .bienvenidos {
-    background: url("../images/Home_page/otraopcion-grande.png") no-repeat center top;
+    background: url("../images/Home_page/otraopcion-grande-min.png") no-repeat center top;
     background-size: cover; }
 
   .edificio img {
@@ -395,8 +460,14 @@ MEDIA QUERY PARA 1200px
     height: auto; }
 
   .eligenos {
-    background: url("../images/Home_page/elegirnos-grande.png") no-repeat center right;
+    background: url("../images/Home_page/elegirnos-grande-min.png") no-repeat center right;
     background-size: cover;
-    height: 100vh; } }
+    height: 100vh; }
+
+  .eligenos h2 {
+    padding-top: 9.3rem; }
+
+  .eligenos p {
+    margin-top: 2rem; } }
 
 /*# sourceMappingURL=estilos.css.map */

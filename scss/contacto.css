@@ -9,8 +9,8 @@ html {
   font-size: 13px; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  background: red; }
+  font-family: 'Raleway', sans-serif;
+  background: white; }
 
 .fixed-top {
   position: absolute; }
@@ -19,10 +19,20 @@ body {
   padding: .5rem 0;
   background-color: transparent !important; }
 
+/*-----------------------------
+LOGO PRINCIPAL, FORMATOS ADAPTABLES
+------------------------------*/
 .encabezado .logo img {
-  width: 100px;
+  width: 80px;
   height: auto; }
 
+.encabezado .logo2 img {
+  width: 250px;
+  height: auto; }
+
+/*-----------------------------
+BOTONES MENU Y BUSCAR
+------------------------------*/
 .boton-buscar,
 .boton-menu {
   color: white;
@@ -125,26 +135,79 @@ MENU PRINCIPAL
 #menu-principal ul li .btn:active {
   background: #6d0976; }
 
+#menu-principal ul li .dropdown-menu a {
+  background: transparent;
+  margin-top: 0.7rem;
+  text-align: center;
+  color: #f8f9fa; }
+
+#menu-principal .dropdown-menu.show {
+  display: contents; }
+
+#menu-principal ul li .dropdown-menu a:hover {
+  color: darkmagenta; }
+
 /*-----------------------------
 SECCION SERVICIOS
 ------------------------------*/
-.texto-contacto {
+.contacto {
   background: url("../images/Home_page/segundaparte-mobil4.png") no-repeat center top;
   background-size: cover; }
 
-.texto-contacto {
+.contacto {
   color: white;
   padding: 2rem; }
 
-.texto-contacto h5, p {
+.contacto h5, p {
   color: white;
   margin: 2rem 0; }
 
-.texto-contacto img {
+.contacto img {
   width: 200px; }
 
-.texto-contacto h2 {
-  margin-top: 6rem; }
+.contacto h2 {
+  margin-top: 6rem;
+  font-weight: bold; }
+
+.formulario {
+  margin: 2rem 0; }
+
+.redes-sociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem 0; }
+
+.redes-sociales h6 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  text-align: center; }
+
+.redes-sociales a img {
+  width: 4rem;
+  height: auto;
+  margin: 1rem; }
+
+/*-----------------------------
+BOTON ENVIAR ...
+------------------------------*/
+.btn-success {
+  background-image: linear-gradient(120deg, #67D690 0%, #00A99D 100%); }
+
+.btn-success:hover {
+  background-image: linear-gradient(120deg, #649a78 0%, #049187 100%);
+  border-color: #71de8a; }
+
+.btn-success:not(:disabled):not(.disabled).active, .btn-success:not(:disabled):not(.disabled):active, .show > .btn-success.dropdown-toggle {
+  color: #fff;
+  background-color: #00A99D;
+  border-color: #1c7430; }
 
 /*-----------------------------
 FOOTER
@@ -155,6 +218,7 @@ footer {
   padding: 2rem 0; }
 
 footer p {
+  color: white;
   margin-top: 0;
   margin-bottom: 0; }
 
@@ -182,9 +246,6 @@ MEDIA QUERY PARA 768px
 @media (min-width: 768px) {
   html {
     font-size: 16px; }
-
-  body {
-    background: #2D1E56; }
 
   .boton-buscar {
     -webkit-box-ordinal-group: 3;
@@ -236,6 +297,15 @@ MEDIA QUERY PARA 768px
   #menu-principal ul li .btn:active {
     background: #6d0976; }
 
+  #menu-principal ul li .dropdown-menu a {
+    background: transparent;
+    margin-top: 0.7rem;
+    text-align: left;
+    color: black; }
+
+  #menu-principal .dropdown-menu.show {
+    display: block; }
+
   .encabezado .container {
     position: relative; }
 
@@ -273,7 +343,7 @@ MEDIA QUERY PARA 768px
     background-size: cover;
     height: 100vh; }
 
-  .texto-contacto {
+  .contacto {
     background: url("../images/Home_page/fondo-servicios.png") no-repeat center top;
     background-size: cover; } }
 /*-----------------------------
