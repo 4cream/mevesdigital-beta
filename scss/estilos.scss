@@ -341,6 +341,26 @@ footer li a{
   font-size: 2rem;
 }
 
+.ir-arriba {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  color: #13b29b;
+  font-size: 2rem;
+  z-index: 99999;
+  text-decoration: none;
+  line-height: 0;
+  display: none;
+  // transition: all 3s ease; no me funciona este fx todavia, lo hice en el propio jquery sitio.js
+}
+
+.ir-arriba:hover,
+.ir-arriba:focus {
+    outline: 0;
+    text-decoration: none;
+    color: #009688;
+}
+
 
 /*-----------------------------
 MEDIA QUERY PARA 768px

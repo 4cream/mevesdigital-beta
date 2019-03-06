@@ -210,6 +210,23 @@ footer li a {
   color: white;
   font-size: 2rem; }
 
+.ir-arriba {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  color: #13b29b;
+  font-size: 2rem;
+  z-index: 99999;
+  text-decoration: none;
+  line-height: 0;
+  display: none; }
+
+.ir-arriba:hover,
+.ir-arriba:focus {
+  outline: 0;
+  text-decoration: none;
+  color: #009688; }
+
 /*-----------------------------
 MEDIA QUERY PARA 768px
 ------------------------------*/
