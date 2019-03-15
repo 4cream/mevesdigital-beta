@@ -10,7 +10,7 @@ INICIALIZANDO EL SMOOTH scroll
 
 var scroll = new SmoothScroll('a[href="#servicios"]', {
 	speed: 1000,
-  offset: -23
+  offset: -70
 });
 
 var scroll = new SmoothScroll('a[href="#encabezado"]', {
@@ -21,9 +21,7 @@ var scroll = new SmoothScroll('a[href="#encabezado"]', {
 // offset: 50 esto es para generar el scroll solo hasta el numero en px que corresponde a la ventana
 
 /*-----------------------------
--------------------------------
 ------------------------------*/
-
 
 /*---------------------------------
     OCULTAR Y MOSTRAR BOTON IR ARRIBA
@@ -39,3 +37,9 @@ $(function () {
     });
 
 });
+
+/*---------------------------------
+    WOW.JS y ANIMATE.CSS.
+ ----------------------------------*/
+
+ new WOW().init();  // Iniciamos wow.js
