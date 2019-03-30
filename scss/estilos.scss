@@ -202,10 +202,11 @@ TEXTO DEL ENCABEZADO
 
 .texto-encabezado .display-4 {
     margin-top: 5rem;
+    font-size: 3rem;
 }
 
 .texto-encabezado p {
-  margin: 1rem 0 2rem 0;
+  margin: 1rem 0 1.2rem 0;
 }
 
 
@@ -256,10 +257,10 @@ FLECHA BAJAR ANIMADA
 SECCION DE PORQUE ELEGIRNOS
 ------------------------------*/
 
-.eligenos h2 {
+.eligenos h3 {
   color: white;
   padding-top: 5rem;
-  text-align: center;
+  text-align: left;
 }
 
 .eligenos p {
@@ -283,22 +284,22 @@ SECCION SERVICIOS
   padding: 2rem;
 }
 
-.servicios h2{
+.servicios h3{
   color: white;
   margin-top: 4rem;
   font-weight: bold;
 }
 
-.servicios h5{
+.servicios h1{
   color: white;
   margin: 2rem 0 2rem 0;
-  font-weight: bold;
+  // font-weight: bold;
 }
 
 .servicios p {
   text-align: justify;
   margin-top: 2rem;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 .servicios img {
@@ -314,6 +315,13 @@ footer {
   background-color: #17113C;
   background-size: cover;
   padding: 2rem 0;
+}
+
+footer .h4{
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+
 }
 
 footer p{
@@ -343,8 +351,8 @@ footer li a{
 
 .ir-arriba {
   position: fixed;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 1.3rem;
+  right: 1.5rem;
   color: #13b29b;
   font-size: 2rem;
   z-index: 99999;
@@ -474,10 +482,6 @@ MEDIA QUERY PARA 768px
   color: white;
 }
 
-.texto-encabezado .display-4 {
-  // margin-top: 12rem;
-}
-
 
 .edificio{
   margin-top: 7rem;
@@ -499,19 +503,14 @@ PORQUE ELEGIRNOS
   height: 100vh;
 }
 
-.eligenos h2{
-  text-align: left;
-  padding-top: 1rem;
-}
-
 .eligenos p {
   margin-top: 1rem;
 }
 
-.eligenos .col-md-4 {
-    background: rgba(139, 0, 139, 0.5);
-    border-radius: 5px;
-}
+// .eligenos .col-md-4 {
+//     background: rgba(139, 0, 139, 0.5);
+//     border-radius: 5px;
+// }
 
 
 /*-----------------------------
