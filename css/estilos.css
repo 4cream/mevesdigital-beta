@@ -322,7 +322,8 @@ footer ul {
 
 footer li {
   text-decoration: none;
-  margin-right: 10px; }
+  margin-right: 10px;
+  margin-left: 10px; }
 
 footer li a {
   color: white;
