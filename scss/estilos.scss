@@ -33,7 +33,7 @@ body {
 }
 
 .encabezado{
-  padding: .5rem 0;
+  padding: 1.5rem 0 0 0;
   background-color: transparent !important;
 }
 
@@ -73,7 +73,6 @@ BOTONES MENU Y BUSCAR
 .boton-menu:active{
   color: red;
 }
-
 .boton-buscar:focus,
 .boton-menu:focus{
   color: #a9008d;
@@ -81,12 +80,8 @@ BOTONES MENU Y BUSCAR
   font-size: 1.5rem;
 }
 
-
 .boton-buscar{
   margin-left: auto;
-}
-.boton-menu{
-
 }
 
 /*-----------------------------
@@ -277,16 +272,13 @@ SECCION SERVICIOS
   background: url("../images/Home_page/segundaparte-mobil4.png") no-repeat center top;
   // background-size: cover;
   // height: 100vh;
-}
-
-.servicios {
   color: white;
   padding: 2rem;
 }
 
 .servicios h3{
   color: white;
-  margin-top: 4rem;
+  margin-top: 2rem;
   font-weight: bold;
 }
 
@@ -300,10 +292,43 @@ SECCION SERVICIOS
   text-align: justify;
   margin-top: 2rem;
   padding: 0 1rem;
+  color: white;
 }
 
 .servicios img {
   width: 200px;
+}
+
+.servicios h2 {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.servicios .btn {
+  width: 12rem;
+}
+
+.img-service{
+  background-color: white;
+}
+
+.img-service img {  // aca las images de cada servicio que yo ofrezco
+  width: 18rem;
+}
+
+.img-service p {
+  color:black;
+}
+
+.img-service h5 {
+  padding-top: 9rem;
+  font-weight: bold;
+}
+
+.img-service h2 {
+  margin: 2rem 0 1rem 0;
+  font-weight: bold;
 }
 
 
@@ -507,11 +532,6 @@ PORQUE ELEGIRNOS
   margin-top: 1rem;
 }
 
-// .eligenos .col-md-4 {
-//     background: rgba(139, 0, 139, 0.5);
-//     border-radius: 5px;
-// }
-
 
 /*-----------------------------
 SERVICIOS
@@ -520,7 +540,16 @@ SERVICIOS
 .servicios{
   background: url("../images/Home_page/fondo-servicios.png") no-repeat center top;
   background-size: cover;
-  // height: 100vh;  crea conflicto cuando el texto es largo
+  height: 100vh;
+}
+
+.botonera-servicios {
+  display: flex;
+  justify-content: space-around;
+}
+
+.img-service img {  // aca las images de cada servicio que yo ofrezco
+  width: 16rem;
 }
 
 }

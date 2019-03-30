@@ -9,13 +9,31 @@ INICIALIZANDO EL SMOOTH scroll
 // });
 
 var scroll = new SmoothScroll('a[href="#servicios"]', {
-	speed: 1000,
-  offset: -70
+	speed: 800,
+  offset: -5
 });
 
 var scroll = new SmoothScroll('a[href="#encabezado"]', {
                           // ('a[href*="#"]') para seleccionar todos los a href
-	speed: 600
+	speed: 300
+});
+
+var scroll = new SmoothScroll('a[href="#eligenos"]', {
+	speed: 1000,
+  offset: -10
+});
+
+var scroll = new SmoothScroll('a[href="#paginas-web"]', {
+	speed: 500,
+  offset: -100
+});
+var scroll = new SmoothScroll('a[href="#tiendas"]', {
+	speed: 400,
+  offset: -100
+});
+var scroll = new SmoothScroll('a[href="#marketing"]', {
+	speed: 300,
+  offset: -100
 });
 
 // offset: 50 esto es para generar el scroll solo hasta el numero en px que corresponde a la ventana
