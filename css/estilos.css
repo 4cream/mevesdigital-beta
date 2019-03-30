@@ -29,7 +29,7 @@ body {
   position: absolute; }
 
 .encabezado {
-  padding: .5rem 0;
+  padding: 1.5rem 0 0 0;
   background-color: transparent !important; }
 
 /*-----------------------------
@@ -245,15 +245,13 @@ SECCION DE PORQUE ELEGIRNOS
 SECCION SERVICIOS
 ------------------------------*/
 .servicios {
-  background: url("../images/Home_page/segundaparte-mobil4.png") no-repeat center top; }
-
-.servicios {
+  background: url("../images/Home_page/segundaparte-mobil4.png") no-repeat center top;
   color: white;
   padding: 2rem; }
 
 .servicios h3 {
   color: white;
-  margin-top: 4rem;
+  margin-top: 2rem;
   font-weight: bold; }
 
 .servicios h1 {
@@ -263,10 +261,33 @@ SECCION SERVICIOS
 .servicios p {
   text-align: justify;
   margin-top: 2rem;
-  padding: 0 1rem; }
+  padding: 0 1rem;
+  color: white; }
 
 .servicios img {
   width: 200px; }
+
+.servicios h2 {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  font-weight: bold; }
+
+.img-service {
+  background-color: white; }
+
+.img-service img {
+  width: 18rem; }
+
+.img-service p {
+  color: black; }
+
+.img-service h5 {
+  padding-top: 9rem;
+  font-weight: bold; }
+
+.img-service h2 {
+  margin: 2rem 0 1rem 0;
+  font-weight: bold; }
 
 /*-----------------------------
 FOOTER
@@ -445,7 +466,18 @@ MEDIA QUERY PARA 768px
   ------------------------------*/
   .servicios {
     background: url("../images/Home_page/fondo-servicios.png") no-repeat center top;
-    background-size: cover; } }
+    background-size: cover;
+    height: 100vh; }
+
+  .botonera-servicios {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+
+  .img-service img {
+    width: 16rem; } }
 /*-----------------------------
 MEDIA QUERY PARA 992px
 ------------------------------*/
